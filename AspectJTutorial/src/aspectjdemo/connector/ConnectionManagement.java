@@ -1,4 +1,4 @@
-package aspectjdemo;
+package aspectjdemo.connector;
 
 public class ConnectionManagement {
 	public static void openConnection() {
@@ -7,9 +7,5 @@ public class ConnectionManagement {
 	
 	public static void closeConnection() {
 		System.out.println("Close connection.");
-	}
-	
-	public static void logError(Exception e) {
-		System.out.println("Something went wrong...\t" + e.getMessage());
 	}
 }

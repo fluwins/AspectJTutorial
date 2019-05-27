@@ -1,4 +1,4 @@
-package aspectjdemo;
+package aspectjdemo.model;
 
 public class Customer {
 	private Integer id;

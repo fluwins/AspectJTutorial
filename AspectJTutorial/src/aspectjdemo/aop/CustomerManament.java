@@ -1,7 +1,9 @@
-package aspectjdemo;
+package aspectjdemo.aop;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import aspectjdemo.model.Customer;
 
 public class CustomerManament {
 
@@ -15,9 +17,9 @@ public class CustomerManament {
 		return getCustomerById(id);
 	}
 
-	public void addCustomer(Customer customer) throws Exception {
+	public void addCustomer(Customer customer) {
 		if (null != getCustomerById(customer.getId())) {
-			throw new Exception("Customer already existed.");
+			throw new RuntimeException("Customer already existed.");
 		}
 
 		this.customers.add(customer);
